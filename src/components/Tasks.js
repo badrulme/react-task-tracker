@@ -8,8 +8,8 @@ const Tasks = ({ tasks, deleteTask,toogleReminder }) => {
 
     return (
         <>
-            {tasks.map((task) => (
-                <Task toogleReminder={toogleReminder} deleteTask={deleteTask} key={task.id} task={task} />
+            {tasks.map((task,index) => (
+                <Task toogleReminder={toogleReminder} deleteTask={deleteTask} key={index} task={task} />
             ))}
         </>
     )
